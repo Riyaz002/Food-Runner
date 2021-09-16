@@ -13,8 +13,85 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryVariant"
         app:title="Registration"
+        app:titleTextColor="@color/white"
         app:titleTextAppearance="@style/TextAppearance.AppCompat.Headline" />
 
+    <EditText
+        android:id="@+id/txtNameInRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBarInRegistration"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="60dp"
+        android:hint="Name (Min. 3 words)"
+        android:inputType="text" />
 
+    <EditText
+        android:id="@+id/txtEmailInRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNameInRegistration"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Email"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/txtMobileNumberInRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmailInRegistration"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:hint="Mobile Number"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtAddressInRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMobileNumberInRegistration"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Address"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/txtPasswordInRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddressInRegistration"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Password"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/txtConfirmPasswordInRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPasswordInRegistration"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:hint="Confirm Password"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnRegistration"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtConfirmPasswordInRegistration"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorSecondary"
+        android:text="Register"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

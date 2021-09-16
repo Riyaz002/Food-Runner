@@ -20,6 +20,7 @@ class LoginActivity : AppCompatActivity() {
     lateinit var enteredNumber: EditText
     lateinit var enteredPassword: EditText
     lateinit var btnLogin: Button
+    lateinit var btnforgotPassword: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +29,7 @@ class LoginActivity : AppCompatActivity() {
         enteredNumber = findViewById(R.id.etNumber)
         enteredPassword = findViewById(R.id.etPassword)
         btnLogin = findViewById(R.id.btnLogin)
+        btnforgotPassword = findViewById(R.id.btnForgotPassword)
 
         btnLogin.setOnClickListener {
             val number: String = enteredNumber.text.toString()
@@ -63,6 +65,11 @@ class LoginActivity : AppCompatActivity() {
                 }
                 jsonRequestQueue.add(jsonObjectRequest)
             }
+        }
+
+        btnforgotPassword.setOnClickListener {
+            val intent = Intent(this@LoginActivity, ForgotPasswordActivity::class.java)
+            startActivity(intent)
         }
     }
 }

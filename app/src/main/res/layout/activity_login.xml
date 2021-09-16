@@ -51,7 +51,7 @@
         android:layout_below="@id/etPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/colorSecondaryVariant"
+        android:backgroundTint="@color/colorSecondary"
         android:elevation="6dp"
         android:text="Log in"
         android:textColor="@color/colorPrimary"
