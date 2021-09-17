@@ -52,7 +52,7 @@
                     android:id="@+id/txtPriceInHome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txtNameRestaurant"
+                    android:layout_below="@+id/txtNameInHome"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="85dp"
                     android:text="RS. 250/Person"
