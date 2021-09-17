@@ -46,7 +46,7 @@ class RegistrationActivity : AppCompatActivity() {
         userPassword = findViewById(R.id.txtPasswordInRegistration)
         userConfirmedPassword = findViewById(R.id.txtConfirmPasswordInRegistration)
         btnRegister = findViewById(R.id.btnRegistration)
-        sharedPreferences = getPreferences(MODE_PRIVATE)
+        sharedPreferences = getSharedPreferences("loginInfo", MODE_PRIVATE)
 
         btnRegister.setOnClickListener {
             if (userPassword.text.toString() != userConfirmedPassword.text.toString()) {
@@ -66,8 +66,9 @@ class RegistrationActivity : AppCompatActivity() {
                         try {
                             var success = it.getBoolean("success")
                             if (success) {
-
                                 val jsonDataObject = it.getJSONObject("data")
+                                sharedPreferences.edit().clear().apply()
+
                                 sharedPreferences.edit()
                                     .putString("name", jsonDataObject.getString("name")).apply()
                                 sharedPreferences.edit()
@@ -106,6 +107,7 @@ class RegistrationActivity : AppCompatActivity() {
                             return headers
                         }
                     }
+                jsonRequestQueue.add(jsonObjectRequest)
             }
 
         }
