@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/faiza/AndroidStudioProjects/FoodRunner/app/src/main/res/drawable-anydpi/ic_favouriteOff.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/faiza/AndroidStudioProjects/FoodRunner/app/src/main/res/drawable-anydpi/ic_favouriteOn.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/faiza/AndroidStudioProjects/FoodRunner/app/src/main/res/drawable-anydpi/ic_favourites.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/faiza/AndroidStudioProjects/FoodRunner/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.14375" />
         <entry key="..\:/Users/faiza/AndroidStudioProjects/FoodRunner/app/src/main/res/layout-w936dp/activity_login.xml" value="0.180078125" />
         <entry key="..\:/Users/faiza/AndroidStudioProjects/FoodRunner/app/src/main/res/layout/activity_forgot_password.xml" value="0.25076923076923074" />
