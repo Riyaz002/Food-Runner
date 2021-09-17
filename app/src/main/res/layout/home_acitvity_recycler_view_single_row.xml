@@ -1,24 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:elevation="5dp">
 
         <LinearLayout
+            android:id="@+id/recyclerRow"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:orientation="horizontal"
-            android:weightSum="10">
+            android:weightSum="10"
+            android:background="@color/colorPrimary">
 
-            <ImageView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="4"
-                android:src="@color/colorSecondary"></ImageView>
+                android:layout_weight="3.5">
+
+                <ImageView
+                    android:id="@+id/imgRestaurantImageInHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logo"></ImageView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                >
+
+                <TextView
+                    android:id="@+id/txtNameInHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtPriceInHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNameRestaurant"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="85dp"
+                    android:text="RS. 250/Person"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <ImageButton
+                    android:id="@+id/btnFavouriteInHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_favouriteOff" />
+
+                <TextView
+                    android:id="@+id/txtRatingInHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnFavouriteInHome"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="77dp"
+                    android:text="4.1"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-</LinearLayout>
+</RelativeLayout>

@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.FrameLayout
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.google.android.material.navigation.NavigationView
-import com.riyaz.foodrunner.fragment.HomeFragment
 
 class MainActivity : AppCompatActivity() {
     lateinit var coordinatorLayout: CoordinatorLayout

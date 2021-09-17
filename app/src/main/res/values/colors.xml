@@ -10,6 +10,7 @@
     <color name="colorPrimary">#A2D6D1</color>
     <color name="colorPrimaryVariant">#23AC9C</color>
     <color name="colorOnPrimary">@color/black</color>
+    <color name="gold">#FFC107</color>
     <!-- Secondary brand color. -->
     <color name="colorSecondary">#E26969</color>
     <color name="colorSecondaryVariant">#E83F3B</color>
